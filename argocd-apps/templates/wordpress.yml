@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: wordpress
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://alexfiz.github.io/projecthelm/'
+    targetRevision: 0.0.6
+    chart: wp_project
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: project
+  syncPolicy:
+    automated:
+      prune: true
