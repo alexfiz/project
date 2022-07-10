@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: 'https://alexfiz.github.io/project/'
-    targetRevision: 0.0.6
+    targetRevision: 0.0.4
     chart: wp_project
   destination:
     server: 'https://kubernetes.default.svc'
