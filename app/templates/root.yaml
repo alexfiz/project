@@ -11,7 +11,7 @@ spec:
     namespace: project
   project: default
   source:
-    path: argocd-apps/
+    path: app/
     repoURL: https://github.com/alexfiz/project.git
     targetRevision: HEAD
   syncPolicy:
