@@ -12,7 +12,7 @@ spec:
   project: default
   source:
     path: argocd-apps/
-    repoURL: https://github.com/alexfiz/projecthelm.git
+    repoURL: https://alexfiz.github.io/project/
     targetRevision: HEAD
   syncPolicy:
     automated:

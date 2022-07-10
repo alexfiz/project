@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://alexfiz.github.io/projecthelm/'
+    repoURL: 'https://alexfiz.github.io/project/'
     targetRevision: 0.0.6
     chart: wp_project
   destination:
