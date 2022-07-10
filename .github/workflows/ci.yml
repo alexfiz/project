@@ -3,7 +3,7 @@ name: Build and Publish image
 on:
   push:
     branches:
-    - "second"
+    - "main"
 
 jobs:
   release-image:
@@ -40,13 +40,13 @@ jobs:
         cd chart
         helm package wp_project --version=${{ steps.tag_version.outputs.new_tag }} --app-version=${{ steps.tag_version.outputs.new_tag }}
         cd ..
-        helm repo index --url https://alexfiz.github.io/projecthelm/ --merge index.yaml .
-        sed -i 's/targetRevision:.*/targetRevision: ${{ steps.tag_version.outputs.new_tag }}/' argocd-apps/templates/wordpress.yml
+        helm repo index --url https://alexfiz.github.io/project/ --merge index.yaml .
+        sed -i 's/targetRevision:.*/targetRevision: ${{ steps.tag_version.outputs.new_tag }}/' app/templates/wordpress.yml
     - name: validate_manifest
       id: validation
       uses: makocchi-git/actions-k8s-manifests-validate-kubeval@v1.0.1
       with:
-        files: argocd-apps/templates/wordpress.yml
+        files: app/templates/wordpress.yml
 
     - name: Commit and push changes
       run: |
