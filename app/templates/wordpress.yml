@@ -11,7 +11,7 @@ spec:
     chart: wp_project
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: project
+    namespace: default
   syncPolicy:
     automated:
       prune: true
