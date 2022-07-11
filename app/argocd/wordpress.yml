@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: 'https://alexfiz.github.io/projecthelm/'
-    targetRevision: 0.0.6
+    targetRevision: 0.0.10
     chart: wp_project
   destination:
     server: 'https://kubernetes.default.svc'
