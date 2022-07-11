@@ -11,7 +11,7 @@ ingress:
   hostname: wp.k8s-1.sa
 
 persistentVolumeClaim:
-  storageSize: 4Gi
+  storageSize: 5Gi
 
 extraEnvs:
   - name: WORDPRESS_DB_HOST
