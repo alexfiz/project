@@ -41,12 +41,12 @@ jobs:
         helm package wp_project --version=${{ steps.tag_version.outputs.new_tag }} --app-version=${{ steps.tag_version.outputs.new_tag }}
         cd ..
         helm repo index --url https://alexfiz.github.io/project/ --merge index.yaml .
-        sed -i 's/targetRevision:.*/targetRevision: ${{ steps.tag_version.outputs.new_tag }}/' app/wordpress.yml
+        sed -i 's/targetRevision:.*/targetRevision: ${{ steps.tag_version.outputs.new_tag }}/' app/argocd/wordpress.yml
     - name: validate_manifest
       id: validation
       uses: makocchi-git/actions-k8s-manifests-validate-kubeval@v1.0.1
       with:
-        files: app/wordpress.yml
+        files: app/argocd/wordpress.yml
 
     - name: Commit and push changes
       run: |
