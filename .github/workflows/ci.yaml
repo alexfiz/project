@@ -38,7 +38,7 @@ jobs:
     - name: Helm Package
       run: |
         cd chart
-        helm package wp_project --version=${{ steps.tag_version.outputs.new_tag }} --app-version=${{ steps.tag_version.outputs.new_tag }}
+        helm package wordpress --version=${{ steps.tag_version.outputs.new_tag }} --app-version=${{ steps.tag_version.outputs.new_tag }}
         cd ..
         helm repo index --url https://alexfiz.github.io/project/ --merge index.yaml .
 
