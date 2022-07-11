@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   wordpress:
   - apiVersion: v2
+    appVersion: 0.0.21
+    created: "2022-07-11T13:14:50.938802388Z"
+    description: A Helm chart for Kubernetes
+    digest: 1db2a895a73c52ed1cac627ef59f9a2b58f5cc3712dacd268d4980d1f0660070
+    name: wordpress
+    type: application
+    urls:
+    - https://alexfiz.github.io/project/chart/wordpress-0.0.21.tgz
+    version: 0.0.21
+  - apiVersion: v2
     appVersion: 0.0.20
-    created: "2022-07-11T12:58:42.284124367Z"
+    created: "2022-07-11T13:14:50.938429086Z"
     description: A Helm chart for Kubernetes
     digest: 0d2253656d43570575a68669ad748473965aea84c757f5164214c8288a46042b
     name: wordpress
@@ -13,7 +23,7 @@ entries:
     version: 0.0.20
   - apiVersion: v2
     appVersion: 0.0.19
-    created: "2022-07-11T12:58:42.283817966Z"
+    created: "2022-07-11T13:14:50.937992582Z"
     description: A Helm chart for Kubernetes
     digest: e68c0928fb64b77a8be178049ac3095ff3f620c33db954d02b20b12131eefcad
     name: wordpress
@@ -23,7 +33,7 @@ entries:
     version: 0.0.19
   - apiVersion: v2
     appVersion: 0.0.18
-    created: "2022-07-11T12:58:42.283496866Z"
+    created: "2022-07-11T13:14:50.937543479Z"
     description: A Helm chart for Kubernetes
     digest: ff0d3b8b56b16ce206afcdc907057dd8749dc6ea858db368c8498e92fbc48e5b
     name: wordpress
@@ -33,7 +43,7 @@ entries:
     version: 0.0.18
   - apiVersion: v2
     appVersion: 0.0.17
-    created: "2022-07-11T12:58:42.283171766Z"
+    created: "2022-07-11T13:14:50.937036475Z"
     description: A Helm chart for Kubernetes
     digest: 841c533d6bc5d7e2b5f8b8c78727a51bce016b2cab391cfbcb1d30220b97e525
     name: wordpress
@@ -41,4 +51,15 @@ entries:
     urls:
     - https://alexfiz.github.io/project/chart/wordpress-0.0.17.tgz
     version: 0.0.17
-generated: "2022-07-11T12:58:42.282349765Z"
+  wp_project:
+  - apiVersion: v2
+    appVersion: 0.0.2
+    created: "2022-07-11T13:14:50.939296592Z"
+    description: A Helm chart for Kubernetes
+    digest: a89d0c6ee5bbb448f96d2a6901b85335069200a042868dac5d890ce21b3bd21c
+    name: wp_project
+    type: application
+    urls:
+    - https://alexfiz.github.io/project/chart/wp_project-0.0.2.tgz
+    version: 0.0.2
+generated: "2022-07-11T13:14:50.936469871Z"
