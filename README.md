@@ -18,9 +18,9 @@
 
 ---
 
-## Pipeline.
+## Pipeline
 
-![](scheme.png)
+![](Схема.png)
 
 ---
 
